@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Design Bespoke Reward Programmes | Randgo</title>
+    <!-- Styling -->
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 70px;
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            header .nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: right;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 0 20px;
+            }
+
+                header nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                }
+
+                    header nav ul li a:hover {
+                        background-color: hotpink;
+                        color: black;
+                        border-radius: 5px;
+                    }
+
+        nav.mainnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+            nav.mainnav img.main-logo {
+                width: 150px;
+                padding-left: 20px;
+            }
+
+            nav.mainnav ul {
+                list-style: none;
+                display: flex;
+            }
+
+                nav.mainnav ul li {
+                    margin-left: 20px;
+                }
+
+                    nav.mainnav ul li a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 16px;
+                        transition: color 0.3s ease;
+                    }
+
+                        nav.mainnav ul li a:hover {
+                            color: black;
+                        }
+
+
+        .content {
+            padding: 20px;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            height: 93vh;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb23d5cc0c63_Landing%20Page.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .heading-wrapper {
+            padding-top: 200px;
+            color: white;
+        }
+
+        .program-text p {
+            color: white;
+            text-align: center;
+            margin-bottom: 48px;
+            font-family: Inter, sans-serif;
+            font-size: 23px;
+            line-height: 1.2;
+            padding: 30px;
+        }
+
+        h1 {
+            color: var(--rg_pc_black-charcoal);
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 48px;
+            font-family: Inter, sans-serif;
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 120%;
+        }
+
+        .programmes {
+            grid-column-gap: 16px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .pbutton1 {
+            padding: 18px 40px;
+            background-color: mediumpurple;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .pbutton1:hover {
+            background-color:rebeccapurple;
+        }
+
+        .pbutton2 {
+            padding: 18px 40px;
+            background-color: deepskyblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .pbutton2:hover {
+            background-color:blue;
+        }
+
+        .pbutton3 {
+            padding: 18px 40px;
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .pbutton3:hover {
+            background-color: deeppink;
+        }
+        .jobs {
+            z-index: 2;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: auto;
+            padding-top: 100px;
+            padding-right: 250px;
+            display: flex;
+            position: relative;
+            text-align: center;
+        }
+
+            .jobs h2 {
+                align-items: center;
+                text-transform: uppercase;
+                margin-bottom: 24px;
+                display: block;
+            }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 48px;
+            font-family: Inter, sans-serif;
+            font-size: 48px;
+            line-height: 120%;
+            margin-left: 150px;
+        }
+
+        .bold-effect {
+            font-weight: 900;
+        }
+
+        .email {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .email a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .email a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .telephone {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .telephone a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .telephone a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .contactdetails {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            padding: 0.5px;
+        }
+
+        .articles {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .articles a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .articles a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .Faq {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .Faq a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .Faq a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .questions {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: right;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .questions {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .offerlayoutgrid {
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+            grid-template-rows: auto;
+            width: 100%;
+        }
+
+        .cardoffer {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .offerheader1 {
+            background-color: hotpink;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            display: flex;
+        }
+
+        .offerheader1 h2 {
+            color:white;
+            padding-right: 150px;
+        }
+        .offerheader2 {
+            background-color: cadetblue;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            display: flex;
+        }
+
+        .offerheader2 h2 {
+            color: white;
+            padding-right:150px;
+        }
+
+        .offercontent1 p {
+            font-size: 16px;
+            color: #555;
+            padding: 20px 20px;
+        }
+
+        ul.list {
+            padding-left: 20px;
+        }
+
+            ul.list li {
+                margin-bottom: 5px;
+            }
+
+            .offerbutton1 {
+                padding-bottom: 5px;
+                padding-top: 30px;
+            }
+
+        .offerbutton1 a {
+            display: inline-block;
+            background-color: hotpink;
+            color: white;
+            padding: 10px 100px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .offerbutton2 a {
+            display: inline-block;
+            background-color: cadetblue;
+            color: white;
+            padding: 10px 100px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+            .offerbutton1 a:hover {
+                background-color:deeppink;
+            } 
+            
+            .offerbutton2 a:hover {
+                background-color: blue;
+            }
+
+
+        .column {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+            .column h2 {
+                font-size: 38px;
+                margin-bottom: 10px;
+            }
+
+            .column h3 {
+                font-size: 20px;
+                color: #333;
+                margin-top: 10px;
+            }
+
+
+            .column p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #555;
+                margin-top: 10px;
+            }
+
+        .other-benefits ul {
+            padding-left: 20px;
+        }
+
+        .other-benefits li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+
+        .offer-wrapper {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            padding-top: 50px;
+            max-width: 80%;
+            padding-left: 320px;
+        }
+
+
+        .offercolumn {
+            flex: 1;
+            max-width: 45%;
+            min-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .cardoffer1 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 16px;
+        }
+
+        .cardoffer2 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 16px;
+            padding-bottom: 45px;
+        }
+
+        .offercontent {
+            margin-bottom: 15px;
+        }
+
+            .offercontent p {
+                font-size: 16px;
+                line-height: 1.5;
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+        .effect2 {
+            z-index: 2;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: auto;
+            padding-top: 100px;
+            padding-right: 160px;
+            padding-right: 160px;
+            display: flex;
+            position: relative;
+            text-align: center;
+        }
+
+        .effect3 {
+            z-index: 2;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: auto;
+            padding-top: 100px;
+            padding-right: 200px;
+            display: flex;
+            position: relative;
+            text-align: center;
+        }
+
+        .reason1 {
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            padding: 32px 48px;
+            display: flex;
+        }
+
+            .reason1 h4 {
+                color: purple;
+            }
+
+        .reason2 {
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            padding: 32px 48px;
+            display: flex;
+        }
+
+            .reason2 h4 {
+                color: deeppink;
+            }
+
+        .reason3 {
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            padding: 32px 48px;
+            display: flex;
+        }
+
+            .reason3 h4 {
+                color: cadetblue;
+            }
+
+        .reason4 {
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            padding: 32px 48px;
+            display: flex;
+        }
+
+            .reason4 h4 {
+                color: purple;
+            }
+
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Inter, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        .reasonimage1 {
+            margin-bottom: 24px;
+        }
+
+        .reason1 img {
+            vertical-align: central;
+            max-width: 100%;
+            border: 0;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .reasonimage2 {
+            margin-bottom: 24px;
+        }
+
+        .reason2 img {
+            vertical-align: central;
+            max-width: 100%;
+            border: 0;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .reasonimage3 {
+            margin-bottom: 24px;
+        }
+
+        .reason3 img {
+            vertical-align: central;
+            max-width: 100%;
+            border: 0;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .reasonimage4 {
+            margin-bottom: 24px;
+        }
+
+        .reason4 img {
+            vertical-align: central;
+            max-width: 100%;
+            border: 0;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .reasonslayout {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image-collage {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px; 
+            max-width: 100%;
+            margin: auto;
+        }
+
+            .image-collage img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px; 
+            }
+
+        .client-wrapper {
+            width: 100%;
+            height: 93vh;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color:hotpink;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .clientbuttontext {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex;
+            padding-top: 100px
+        }
+
+        .clientbutton {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+            .clientbutton:hover {
+                background-color:cadetblue;
+                color: white;
+                border-color: white;
+            }
+        .contact-form {
+            background-color: none;
+            padding: 40px;
+            border-radius: 8px;
+            width: 60%;
+            margin: 0 auto;
+            text-align:left;
+            justify-items: center;
+            padding-top: 100px;
+        }
+
+        .contact-formtext {
+            text-align:center;
+            padding-bottom: 0;
+        }
+            .contact-form label {
+                margin: 10px 0 5px;
+                display: flex;
+            }
+
+            .contact-form input, .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .contact-form button {
+                background-color: mediumpurple;
+                color: white;
+                font-size: 1.1rem;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                .contact-form button:hover {
+                    background-color: rebeccapurple;
+                }
+                
+            .contact-form p {
+                font-size: 15px;
+            }
+
+            .contact-form p {
+                text-align: center;
+            }
+
+            .programoptions {
+                width: 350px;
+                padding-bottom:0;
+            }
+
+        .footercontent {
+            background-color: black;
+            padding:50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        
+        .footercontent p {
+            color: white;
+        }
+
+        .homecontact a {
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+            .homecontact a:hover {
+                background-color: pink;
+                color: grey;
+            }
+
+        .homecontact p {
+            padding-bottom: 5px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<!-- Main Content -->
+<body>
+  <header>
+	<div class = "contactdetails">
+		<section class = "email">
+			<a href = "mailto:engage@randgo.com">engage@randgo.com</a>
+		</section>
+		<section class = "telephone">
+			<a href = "tel:+27102711500">+27 (0) 10 271 1500</a>
+		</section>
+	</div>
+	<div class = "questions">
+		<section class = "articles">
+			<a href = "https://www.randgo.com/blog-posts">ARTICLES</a>
+		</section>
+		<section class = "Faq">
+			<a href = "https://www.randgo.com/faq">FAQ</a>
+		</section>
+	</div>
+	<hr/>
+    <section>
+        <nav class="mainnav">
+            <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebedaecc0c5e_Randgo%20Logo%20-%20Standard.svg" loading="lazy" alt="Randgo Logo">
+            <ul>
+                <li><a href="Randgo Home Page.html">HOME</a></li>
+                <li><a href="Randgo About Page.html">ABOUT</a></li>
+                <li><a href="Randgo Contact Page.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <hr/>
+    </section>
+</header>
+
+    <div class="content-wrapper">
+        <div class="heading-wrapper">
+            <h1 align="center">ATTRACT, RETAIN AND<br> ENGAGE YOUR PEOPLE.</h1>
+        </div>
+        <div class="program-text">
+            <p align="center">We develop tailored employee and customer loyalty, reward and incentive programmes<br> that are designed to make people love your business as much as you do.</p>
+        </div>
+        <div class="programmes">
+            <a href="Randgo Home Page.html" class="pbutton1">Incentive Programmes</a>
+            <a href="Randgo Home Page.html" class="pbutton2">Customer Programmes</a>
+            <a href="Randgo Home Page.html" class="pbutton3">Employee Programmes</a>
+        </div>
+    </div>
+        <div class="jobs">
+            <h2>What <span class="bold-effect">We Do</span></h2>
+        </div>
+        <div class="offer-wrapper">
+            <div class="offercolumn">
+                <div class="cardoffer1">
+                    <div class="offerheader1">
+                        <h2>Employee</h2>
+                    </div>
+                    <div class="offercontent">
+                        <h3>Employee loyalty, reward and incentive programmes.</h3>
+                        <p>
+                            Using bleeding-edge technology along with a suite of reward, benefit and incentive solutions, we create custom employee programmes to boost employee satisfaction and performance.
+                        </p>
+                        <div class="offercontent1">
+                            <p>Other benefits include:</p>
+                        </div>
+                        <ul>
+                            <li>Attract and retain talent.</li>
+                            <li>Reward the right behaviours.</li>
+                            <li>Drive employees to achieve KPIs and targets.</li>
+                            <li>Add value to your employees’ lives.</li>
+                            <li>Create a more engaged workforce.</li>
+                        </ul>
+                        <div class="offerbutton1">
+                            <a href="Randgo Home Page.htlml">I need an Employee Programme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offercolumn">
+                <div class="cardoffer2">
+                    <div class="offerheader2">
+                        <h2>Customer</h2>
+                    </div>
+                    <div class="offercontent">
+                        <h3>Customer loyalty, reward and incentive programmes.</h3>
+                        <p>Influence behaviour, increase sales, reward your loyal customers, and drive your business forward with a tailor-made incentivisation solution.</p>
+                        <div class="offercontent1">
+                            <p>Other benefits include:</p>
+                        </div>
+                        <ul>
+                            <li>Attract new customers to your business.</li>
+                            <li>Improve customer loyalty and drive repeat engagement.</li>
+                            <li>Reward ideal customer behaviour.</li>
+                            <li>Differentiate your brand from your competitors.</li>
+                            <li>Lower churn.</li>
+                            <li>Create personalised connections with your customers.</li>
+                        </ul>
+                        <div class="offerbutton2">
+                            <a href="Randgo Home Page.htlml">I need a Customer Programme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect2">
+            <h2>Why <span class="bold-effect">We are market leaders</span></h2>
+        </div>
+        <div class=" reasonslayout">
+            <div class="reason1">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb6948cc0c67_Card%20-%20Members.webp" loading="lazy" alt="" class="reasonimage1">
+                <h4>Millions of <br />employee &amp; <br />customer <br />members.</h4>
+            </div>
+            <div class="reason2">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb5609cc0c66_Card%20-%20Saved.webp" loading="lazy" alt="" class="reasonimage2">
+                <h4>Over R20 000 000 <br />saved by members <br />in the last year <br />alone.</h4>
+            </div>
+            <div class="reason3">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb5bc6cc0c74_Card%20-%20Vouchers.webp" loading="lazy" alt="" class="reasonimage3">
+                <h4>millions of <br />Vouchers &amp; <br />Coupons Issued </h4>
+            </div>
+            <div class="reason4">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb6948cc0c67_Card%20-%20Members.webp" loading="lazy" alt="" class="reasonimage4">
+                <h4>Over 500 Retail,<br /> Wholesome &amp; Brand <br />Partners</h4>
+            </div>
+        </div>
+        <div class="client-wrapper">
+            <div class="effect3">
+                <h2>Some of <span class="bold-effect">Our Clients</span></h2>
+            </div>
+            <div class="image-collage">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc000d110d86cbc89739_europ-assistance-p-1600.webp" alt="Image1" />
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc01b1f7298f9dc681d8_blue-label-telecoms-p-1600.webp" alt="Image 2">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc02bda60a5961c5615c_dimension-data-p-1600.webp" alt="Image 3">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc013c93b0af27dca7a6_alexforbs-p-1600.webp" alt="Image 4">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc023fc67e2f04a9db91_city-property-p-1600.webp" alt="Image 5">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc028f02e85ef15f77e4_miway-p-1600.webp" alt="Image 6">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc0198e1661be92304d5_ignition-group-p-1600.webp" alt="Image 7">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/64fefc020756f3ac4dd9cf3f_cell-c-p-1600.webp" alt="Image 8">
+            </div>
+            <div class="clientbuttontext">
+                <a href="Randgo Home Page.html" class="clientbutton">View Our FAQs</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form class="contactForm">
+                <p>Please fill in the form below:</p>
+                <label for="name"></label>
+                <input type="text" id="name" name="name" required placeholder="Your Name*">
+
+                <label for="Surname"></label>
+                <input type="text" id="surname" name="surname" required placeholder="Your Surname*">
+
+                <label for="phonenumber"></label>
+                <input type="tel" id="number" name="phonenumber" required placeholder="Your phone number*">
+
+                <label for="emailadress"></label>
+                <input type="email" id="emailadress" name="emailadress" required placeholder="Your email adress*">
+                
+                <select id="programoptions" name="options" class="programoptions">
+                    <option value="option1" disabled selected>What kind of pragramme do you need?*</option>
+                    <option value="option2">I want to reward my employees.</option>
+                    <option value="option3">I want to reward my customers.</option>
+                    <option value="option4">I want to reward my employees and customers</option>
+                </select>
+
+                <textarea id="message" name="message" rows="10" required placeholder="Your message*"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="footercontent">
+            <div class="footerimage">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebe370cc0c61_Randgo%20Logo%20-%20Light.svg" loading="lazy" alt="Randgo Logo">
+            </div>
+            <div class="homecontact">
+                <p>Contact US</p>
+                <a href="mailto:engage@randgo.com">engage@randgo.com</a><br />
+                <a href="tel:+27102711500">+27 (0) 10 271 1500</a>
+            </div>
+        </div>
+
+    </body>
+</html>

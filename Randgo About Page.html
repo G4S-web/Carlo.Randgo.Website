@@ -1,0 +1,616 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Learn About Randgo | Randgo
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            header .nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: right;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 0 20px;
+            }
+
+                header nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                }
+
+                    header nav ul li a:hover {
+                        background-color: mediumpurple;
+                        color: black;
+                        border-radius: 5px;
+                    }
+
+        nav.mainnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+            nav.mainnav img.main-logo {
+                width: 150px;
+                padding-left: 20px;
+            }
+
+            nav.mainnav ul {
+                list-style: none;
+                display: flex;
+            }
+
+                nav.mainnav ul li {
+                    margin-left: 20px;
+                }
+
+                    nav.mainnav ul li a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 16px;
+                        transition: color 0.3s ease;
+                    }
+
+                        nav.mainnav ul li a:hover {
+                            color: black;
+                        }
+
+        .about-us {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .email {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .email a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .email a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .telephone {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .telephone a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .telephone a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .contactdetails {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            padding: 0.5px;
+        }
+
+        .articles {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .articles a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .articles a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .Faq {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .Faq a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .Faq a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .questions {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: right;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .questions {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .footercontent {
+            background-color: black;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .footercontent p {
+                color: white;
+            }
+
+        .homecontact a {
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+            .homecontact a:hover {
+                background-color: pink;
+                color: grey;
+            }
+
+        .homecontact p {
+            padding-bottom: 5px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        .abouteffect h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 50px;
+            margin-bottom: 24px;
+            font-size: 50px;
+            color: mediumpurple;
+            padding-top: 180px;
+        }
+
+        .abouteffect2 h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            font-size: 50px;
+            color: white;
+            padding-top: 100px;
+        }
+
+        .bold-effect {
+            font-weight: 900;
+        }
+
+        .aboutcontent {
+            padding-top: 0;
+            background-color: white;
+        }
+
+        .aboutcontent2 {
+            padding-top: 0;
+            background-color: mediumpurple;
+        }
+
+        .aboutdescription {
+            text-align: center;
+            font-size: 25px;
+            color: black;
+            padding-bottom: 40px;
+            padding-top: 30px;
+        }
+
+        .aboutdescription2 {
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            padding-bottom: 50px;
+            padding-top: 30px;
+        }
+
+        .theprogrammes {
+            grid-column-gap: 16px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-top: 16px;
+            background-color: black;
+            padding-bottom: 70px;
+        }
+
+        .programmesheader {
+            background-color: black;
+            text-align: center;
+            padding-top: 60px;
+        }
+        .programmesheader h3 {
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+        .button1 {
+            padding: 15px 60px;
+            background-color: mediumpurple;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+            .button1:hover {
+                background-color: rebeccapurple;
+            }
+
+        .button2 {
+            padding: 15px 60px;
+            background-color: deeppink;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold
+        }
+
+            .button2:hover {
+                background-color: hotpink;
+            }
+
+        .button3 {
+            padding: 15px 60px;
+            background-color: deepskyblue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold
+        }
+
+            .button3:hover {
+                background-color: dodgerblue;
+            }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            padding-top: 100px;
+            max-width: 75%;
+            padding-left: 400px;
+            padding-bottom:150px;
+        }
+
+        .aboutlayout {
+            width: 48%;
+        }
+
+        .aboutcard1 {
+            background-color: deepskyblue;
+            border-radius: 16px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 24px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .aboutheader {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .aboutline {
+            background-color: white;
+            width: 100%;
+            height: 8px;
+            position: absolute;
+        }
+
+        .aboutimage {
+            z-index: 2;
+            height: 150px;
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .whiteheader {
+            color: white;
+            text-align: center;
+            padding-top: 20px
+        }
+
+        .aboutcardtext1 {
+            color: white;
+            text-align: center;
+            flex: 1;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .aboutbutton-wrapper {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-left: 32px;
+            padding-right: 32px;
+            display: flex
+        }
+
+        .aboutcard2 {
+            background-color: hotpink;
+            border-radius: 16px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 24px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .aboutcardtext2 {
+            color: white;
+            text-align: center;
+            flex: 1;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .aboutbutton1 {
+            display: inline-block; 
+            padding: 15px 25px; 
+            background-color: deepskyblue;
+            color: white; 
+            text-decoration: none; 
+            border: 2px solid white; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            transition: all 0.3s ease; 
+        }
+
+        .aboutbutton1:hover {
+            background-color: hotpink;
+            color: white;
+            border-color: white; 
+        }
+
+        .aboutbutton2 {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+            .aboutbutton2:hover {
+                background-color: deepskyblue;
+                color: white;
+                border-color: white;
+            }
+    </style>
+</head>
+<body>
+<header>
+    <div class="contactdetails">
+        <section class="email">
+            <a href="mailto:engage@randgo.com">engage@randgo.com</a>
+        </section>
+        <section class="telephone">
+            <a href="tel:+27102711500">+27 (0) 10 271 1500</a>
+        </section>
+    </div>
+    <div class="questions">
+        <section class="articles">
+            <a href="https://www.randgo.com/blog-posts">ARTICLES</a>
+        </section>
+        <section class="Faq">
+            <a href="https://www.randgo.com/faq">FAQ</a>
+        </section>
+    </div>
+    <hr />
+        <nav class="mainnav">
+            <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebedaecc0c5e_Randgo%20Logo%20-%20Standard.svg" loading="lazy" alt="Randgo Logo">
+            <ul>
+                <li><a href="Randgo Home Page.html">HOME</a></li>
+                <li><a href="Randgo About Page.html">ABOUT</a></li>
+                <li><a href="Randgo Contact Page.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <hr/>
+</header>
+        <div class="aboutcontent">
+            <div class="abouteffect">
+                <h1>Some details <span class="bold-effect">About us</span></h1>
+            </div>
+            <div class="aboutdescription">
+                <p>We're not your average loyalty and rewards company. We're Randgo. We <br/>enable South Africa's largest companies to attract, retain and engage their <br/>employees and customers in meaningful ways. We've been doing this for over <br/>15 years and have established ourselves as an industry leader.</p>
+            </div>
+        </div>
+        <div class="aboutcontent2">
+            <div class="abouteffect2">
+                <h1>What we do <span class="bold-effect">For our customers</span></h1>
+            </div>
+            <div class="aboutdescription2">
+                <p>We consult, conceptualise, create and deliver bespoke employee and customer loyalty and reward programmes that empower businesses to achieve their goals and<br/> overcome their challenges.
+                Because we are more than just a benefit provider, you get more than rewards and savings.
+                You get meaningful, customisable end-to-end <br/>solutions that are agile enough to evolve and adapt to your unique needs and scalable enough to cater for all future states.
+                Throughout the process of defining the right<br/> solution for your employees or customers, we invest time to understand what your challenges and gaps are and how our expertise and solutions can help you solve them.</p>
+                <br/>
+                <br/>
+                <p>Then real magic happens as we build and implement a truly customised solution for you,
+                that will evolve as we embark on a partnership to deliver on your programme <br />objectives.
+                At this stage, when others handover and walk away, we step things up by offering full programme management,
+                ongoing programme evolution, detailed<br /> programme analysis, programme and member support and so much more.</p>
+            </div>
+        </div>
+        <div class="programmesheader">
+            <h3>Let us work together</h3>
+        </div>   
+    <div class="theprogrammes">
+            <a href="Randgo Home Page.html" class="button1">Incentive Programmes</a>
+            <a href="Randgo Home Page.html" class="button2">Employee Programmes</a>
+            <a href="Randgo Home Page.html" class="button3">Customer Programmes</a>
+    </div>
+    <div class="about-container">
+        <div class="aboutlayout">
+            <div class="aboutcard1">
+                <div class="aboutheader">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb2607cc0c79_Icon%20-%20News.svg" loading="lazy" alt="" class="aboutimage">
+                    <div class="aboutline"></div>
+                </div>
+                <div class="cardcontent">
+                    <h3 class="whiteheader">Our Views & Industry News</h3>
+                    <div class="aboutcardtext1">
+                        <p>Read our latest views on loyalty programmes, CUSTOMER RETENTION and INSIGHTS ON INDUSTRY UPDATES.</p>
+                    </div>
+                    <div class="aboutbutton-wrapper">
+                        <a href="https://www.randgo.com/blog-posts" class="aboutbutton1">Read Our Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutlayout">
+            <div class="aboutcard2">
+                <div class="aboutheader">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb4688cc0c7d_Icon%20-%20Chat.svg" loading="lazy" alt="" class="aboutimage">
+                    <div class="aboutline"></div>
+                </div>
+                <div class="cardcontent">
+                    <h3 class="whiteheader">Still Have Questions?</h3>
+                    <div class="aboutcardtext2">
+                        <p>If there are still things we have not answered, browse our frequently <br />asked questions or contact us with your questions.</p>
+                    </div>
+                    <div class="aboutbutton-wrapper">
+                        <a href="https://www.randgo.com/faq" class="aboutbutton2">View Our FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footercontent">
+        <div class="footerimage">
+            <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebe370cc0c61_Randgo%20Logo%20-%20Light.svg" loading="lazy" alt="Randgo Logo">
+        </div>
+        <div class="homecontact">
+            <p>Contact US</p>
+            <a href="mailto:engage@randgo.com">engage@randgo.com</a><br />
+            <a href="tel:+27102711500">+27 (0) 10 271 1500</a>
+        </div>
+    </div>
+</body>
+</html>
+

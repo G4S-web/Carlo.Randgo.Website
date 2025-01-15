@@ -1,0 +1,797 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contact Us | Randgo
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            header .nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: right;
+                text-align: center;
+            }
+
+            header nav ul li {
+                margin: 0 20px;
+            }
+
+                header nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                }
+
+                    header nav ul li a:hover {
+                        background-color: deepskyblue;
+                        color: black;
+                        border-radius: 5px;
+                    }
+
+        nav.mainnav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+        }
+
+            nav.mainnav img.main-logo {
+                width: 150px;
+                padding-left: 20px;
+            }
+
+            nav.mainnav ul {
+                list-style: none;
+                display: flex;
+            }
+
+                nav.mainnav ul li {
+                    margin-left: 20px;
+                }
+
+                    nav.mainnav ul li a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: bold;
+                        font-size: 16px;
+                        transition: color 0.3s ease;
+                    }
+
+                        nav.mainnav ul li a:hover {
+                            color: black;
+                        }
+
+        .about-us {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .email {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .email a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .email a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .telephone {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .telephone a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .telephone a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .contactdetails {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: left;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            padding: 0.5px;
+        }
+
+        .articles {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .articles a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .articles a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .Faq {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+
+            .Faq a {
+                font-size: 15px;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                display: inline-block;
+                padding: 0;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+                .Faq a:hover {
+                    background-color: pink;
+                    color: grey;
+                }
+
+        .questions {
+            grid-column-gap: 10px;
+            order: -1;
+            justify-content: right;
+            align-items: center;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 20px;
+        }
+
+        .questions {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: 0 auto;
+        }
+
+            .contact-form label {
+                display: block;
+                margin: 10px 0 5px;
+            }
+
+            .contact-form input, .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .contact-form button {
+                background-color: #004d00;
+                color: white;
+                font-size: 1.1rem;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                .contact-form button:hover {
+                    background-color: #ffd700;
+                }
+
+        footer {
+            background-color: #004d00;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footercontent {
+            background-color: black;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .footercontent p {
+                color: white;
+            }
+
+        .homecontact a {
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+            .homecontact a:hover {
+                background-color: pink;
+                color: grey;
+            }
+
+        .homecontact p {
+            padding-bottom: 5px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+
+        .contacteffect h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 225px;
+            margin-bottom: 24px;
+            font-size: 50px;
+            color: mediumpurple;
+        }
+
+        .bold-effect {
+            font-weight: 900;
+        }
+
+        .contactdescription {
+            text-align: center;
+            font-size: 25px;
+            color: dimgrey;
+            padding-bottom: 40px;
+        }
+
+        .contactcontent {
+            padding-top: 20px;
+            background-color: white;
+        }
+        /* form styling*/
+        .contact-form {
+            background-color: none;
+            border-radius: 8px;
+            width: 60%;
+            margin: 0 auto;
+            text-align: left;
+            justify-items: center;
+            background-color: white;
+        }
+
+        .contact-formtext {
+            text-align: center;
+            padding-bottom: 0;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+            display: flex;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            background-color: mediumpurple;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .contact-form button:hover {
+                background-color: rebeccapurple;
+            }
+
+        .contact-form p {
+            font-size: 15px;
+        }
+
+        .contact-form p {
+            text-align: center;
+        }
+
+        .contact-form {
+            background-color: black;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 50%;
+            padding-top: 90px;
+            padding-bottom: 40px
+        }
+
+        .contactForm {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+        }
+
+            .contactForm p {
+                font-size: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: white;
+            }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: black;
+            color: white;
+            border-color: grey;
+        }
+
+            input:focus, select:focus, textarea:focus {
+                border-color: black;
+                outline: none;
+            }
+
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        textarea {
+            resize: vertical;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                width: 90%;
+            }
+        }
+
+        .getincontact {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .contactimage {
+            z-index: 2;
+            height: 150px;
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            padding-top: 120px;
+            max-width: 75%;
+            padding-left: 400px;
+        }
+
+        .contactlayout {
+            width: 48%;
+        }
+
+
+        .contactcard1 {
+            background-color: rebeccapurple;
+            border-radius: 16px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 24px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .contactheader {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .contactline {
+            background-color: white;
+            width: 100%;
+            height: 8px;
+            position: absolute;
+        }
+
+        .whiteheader {
+            color: white;
+            text-align: center;
+            padding-top: 20px
+        }
+
+        .cardtext1 {
+            color: white;
+            text-align: center;
+            flex: 1;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .cardtext1 a:hover {
+            color: deepskyblue;
+        }
+
+        .cardlink {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contactcard2 {
+            background-color: deepskyblue;
+            border-radius: 16px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .cardtext2 {
+            color: white;
+            text-align: center;
+            flex: 1;
+            margin-top: 16px;
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        .cardtext2 a:hover {
+            color: purple;
+        }
+
+        .locationheader {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 100px;
+            margin-bottom: 24px;
+            font-size: 24px;
+            color: white;
+            background-color: hotpink;
+            padding: 70px;
+        }
+
+        .bottomcontainer {
+            z-index: 2;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: auto;
+            padding: 48px 16px;
+            display: flex;
+            position: relative;
+        }
+
+        .bottomlayout {
+            grid-row-gap: 24px;
+            grid-column-gap: 24px;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            display: grid;
+            width: 100%;
+        }
+
+            .bottomlayout a {
+                color: white;
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+        .phonelink {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        .bottomcontent {
+            background-color: hotpink;
+            padding: 70px;
+        }
+
+        .phonecard {
+            grid-row-gap: 16px;
+            border-radius: 16px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 24px;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .whitetitle {
+            text-align: center;
+            color: white;
+        }
+
+        .bottomcardtext {
+            color: white;
+            text-align: center;
+            width: 100%;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .adresslink {
+            max-width: 100%;
+            display: inline-block;
+        }
+
+        .emaillink {
+            max-width: 100%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<!-- Header Section -->
+<body>
+    <header>
+        <div class="contactdetails">
+            <section class="email">
+                <a href="mailto:engage@randgo.com">engage@randgo.com</a>
+            </section>
+            <section class="telephone">
+                <a href="tel:+27102711500">+27 (0) 10 271 1500</a>
+            </section>
+        </div>
+        <div class="questions">
+            <section class="articles">
+                <a href="https://www.randgo.com/blog-posts">ARTICLES</a>
+            </section>
+            <section class="Faq">
+                <a href="https://www.randgo.com/faq">FAQ</a>
+            </section>
+        </div>
+        <hr />
+        <section>
+            <nav class="mainnav">
+                <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebedaecc0c5e_Randgo%20Logo%20-%20Standard.svg" loading="lazy" alt="Randgo Logo">
+                <ul>
+                    <li><a href="Randgo Home Page.html">HOME</a></li>
+                    <li><a href="Randgo About Page.html">ABOUT</a></li>
+                    <li><a href="Randgo Contact Page.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </section>
+    </header>
+    <div class="contactcontent">
+        <div class="contacteffect">
+            <h1>Get in <span class="bold-effect">Contact with us</span></h1>
+        </div>
+        <div class="contactdescription">
+            <p>Looking For an employee or customer loyalty, rewards or incentive programme?<br />Pop us your details and we'll get in touch with you.</p>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form class="contactForm">
+            <p>Please fill in the form below:</p>
+
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Your Name*">
+
+            <label for="surname"></label>
+            <input type="text" id="surname" name="surname" required placeholder="Your Surname*">
+
+            <label for="phonenumber"></label>
+            <input type="tel" id="phonenumber" name="phonenumber" required placeholder="Your Phone Number*">
+
+            <label for="emailadress"></label>
+            <input type="email" id="emailadress" name="emailadress" required placeholder="Your Email Address*">
+
+            <label for="programoptions"></label>
+            <select id="programoptions" name="programoptions" class="programoptions" required>
+                <option value="" disabled selected>What kind of programme do youn need?*</option>
+                <option value="option1">I want to reward my employees.</option>
+                <option value="option2">I want to reward my customers.</option>
+                <option value="option3">I want to reward my employees and customers</option>
+            </select>
+
+            <label for="foundus"></label>
+            <select id="foundus" name="foundus" class="foundus" required>
+                <option value="" disabled selected>Where did you hear about us?*</option>
+                <option value="option1">Search engine (eg.Google)</option>
+                <option value="option2">Online Advertisements</option>
+                <option value="option3">LinkedIN</option>
+                <option value="option4">News Outlet</option>
+                <option value="option5">Radio</option>
+                <option value="option6">Other</option>
+            </select>
+
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="4" required placeholder="Your Message*"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="contact-container">
+        <div class="contactlayout">
+            <div class="contactcard1">
+                <div class="contactheader">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183ceb0db9cc0c80_Icon%20-%20Lightbulb.svg" loading="lazy" alt="" class="contactimage">
+                    <div class="contactline"></div>
+                </div>
+                <div class="cardcontent">
+                    <h4 class="whiteheader">Looking for a loyalty programme?</h4>
+                    <div class="cardtext1">
+                        <p>Do you want one of our experts to come through and demonstrate the<br /> value of our solutions can deliver?</p>
+                    </div>
+                    <div class="cardtext1">
+                        Contact: <a href="mailto:attract@randgo.com" class="cardlink">attract@randgo.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactlayout">
+            <div class="contactcard2">
+                <div class="contactheader">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebb6b7cc0c81_Icon%20-%20Handshake.svg" loading="lazy" alt="" class="contactimage">
+                    <div class="contactline"></div>
+                </div>
+                <div class="cardcontent">
+                    <h4 class="whiteheader">Looking for a partner with Randgo?</h4>
+                    <div class="cardtext2">
+                        <p>If there are still things we have not answered, browse our frequently <br />asked questions or contact us with your questions.</p>
+                    </div>
+                    <div class="cardtext2">
+                        Contact <span class="bold-effect">Carl Rex</span> <a href="mailto:carl@randgo.com" class="cardlink">carl@randgo.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="locationheader">
+        <h1>Where to <span class="bold-effect"> Find us </span></h1>
+    </div>
+<div class="bottomcontent">
+    <div class="bottomcontainer w-container">
+        <div class="bottomlayout">
+            <a href="tel:+27102711500" class="phonelink">
+                <div class="phonecard">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebdf47cc0c8c_Contact%20-%20Phone.webp" loading="lazy" alt="Telephone Icon" class="bottomcardimage" />
+                    <h4 class ="whitetitle">Phone</h4>
+                    <div class="bottomcardtext">+27 (0) 10 271 1500</div>
+                </div>
+            </a>
+            <a  href="Randgo Home Page.html" class="adresslink">
+                <div class="phonecard">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebf4e9cc0c82_Contact%20-%20Address.webp" loading="lazy" alt="Location Icon" class="bottomcardimage" />
+                    <h4 class="whitetitle">Address</h4>
+                    <div class="bottomcardtext">
+                        8 Waterval Crescent South,<br />Woodmead Ext. 5, Sandton
+                    </div>
+                </div>
+            </a>
+            <a href="mailto:engage@randgo.com" class="emaillink">
+                <div class="phonecard">
+                    <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebae3ccc0c83_Contact%20-%20Email.webp" loading="lazy" alt="Email Icon" class="bottomcardimage" />
+                    <h4 class="whitetitle">Email</h4>
+                    <div class="bottomcardtext">engage@randgo.com</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+    <div class="footercontent">
+        <div class="footerimage">
+            <img src="https://cdn.prod.website-files.com/6405c106183ceb3dcacc0c43/6405c106183cebe370cc0c61_Randgo%20Logo%20-%20Light.svg" loading="lazy" alt="Randgo Logo">
+        </div>
+        <div class="homecontact">
+            <p>Contact US</p>
+            <a href="mailto:engage@randgo.com">engage@randgo.com</a><br />
+            <a href="tel:+27102711500">+27 (0) 10 271 1500</a>
+        </div>
+    </div>
+</body>
+</html>
